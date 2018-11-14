@@ -8,4 +8,33 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+
+nav {
+  background-color: #333;
+  width: 100vw;
+  color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 24px;
+}
+
+nav .logo {
+  padding: 20px;
+}
+
+nav .navIcon {
+  color: #ccc;
+  padding: 10px 16px;
+  margin: 10px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+
+nav .navItems {
+  display: none;
+}
 /*# sourceMappingURL=sylwia.css.map */
