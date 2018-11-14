@@ -21,11 +21,19 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 nav .logo {
   padding: 16px;
   margin-bottom: 2px;
+}
+
+nav .dropdownMenu {
+  width: 100vw;
+  text-align: center;
 }
 
 nav .navIcon {
@@ -36,8 +44,17 @@ nav .navIcon {
   border-radius: 8px;
 }
 
-nav .navItems {
+nav .navIcon:hover {
+  cursor: pointer;
+}
+
+nav #navItems {
   display: none;
+}
+
+nav #navItems .navItem {
+  border-bottom: 1px solid #bbb;
+  padding: 5px;
 }
 
 main {
@@ -143,25 +160,42 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .dropdownMenu {
+    width: 60vw;
+  }
   nav .navIcon {
     display: none;
   }
-  nav .navItems {
+  nav #navItems {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  nav .navItems .navItem {
+  nav #navItems .navItem {
+    display: inline-block;
+    width: 10vw;
     padding: 6px;
     color: #aaa;
     margin: 16px 16px 10px 0;
     font-size: 16px;
+    border: 0 solid transparent;
   }
-  nav .navItems .navItem::first-child {
-    color: #eee;
+  nav #navItems .navItem:first-child {
+    color: #fff;
   }
-  nav .navItems .navItem:hover {
+  nav #navItems .navItem:hover {
     color: #ddd;
+  }
+  nav #navItems .navItem:first-child:hover {
+    color: #fff;
   }
   main .content {
     display: -webkit-box;

@@ -15,14 +15,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="sylwia.css" type="text/css" />
+    <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
     <nav>
       <div class="logo">Stop Bootstrap</div>
+      <div class="navIcon" onclick="show();"><i class="fas fa-bars"></i></div>
+
       <div class="dropdownMenu">
-        <div class="navIcon"><i class="fas fa-bars"></i></div>
-        <div class="navItems">
+        <div id="navItems">
           <div class="navItem">Home</div>
           <div class="navItem">About</div>
           <div class="navItem">Services</div>
