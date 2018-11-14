@@ -33,7 +33,7 @@ nav .logo {
 
 nav .dropdownMenu {
   width: 100vw;
-  text-align: center;
+  display: block;
 }
 
 nav .navIcon {
@@ -49,12 +49,15 @@ nav .navIcon:hover {
 }
 
 nav #navItems {
+  padding: 10px;
   display: none;
+  -webkit-transition: display .5s ease-in-out 0;
+  transition: display .5s ease-in-out 0;
 }
 
 nav #navItems .navItem {
-  border-bottom: 1px solid #bbb;
   padding: 5px;
+  font-size: 20px;
 }
 
 main {
