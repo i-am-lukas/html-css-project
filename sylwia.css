@@ -48,6 +48,12 @@ main header h1 {
   font-size: 40px;
   font-weight: normal;
   padding-bottom: 10px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+main header h2 {
+  display: inline-block;
 }
 
 main h2 {
@@ -65,7 +71,18 @@ main .content .mainPic {
   width: 100%;
   height: 60vw;
   background-color: #ddd;
+  color: #AAA;
+  font-size: 50px;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .related {
@@ -73,11 +90,31 @@ main .related {
   margin-bottom: 10px;
 }
 
+main .related .pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 main .related .relatedPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
   width: 100%;
   height: 60vw;
+  max-height: 300px;
   background-color: #ddd;
-  margin-top: 10px;
+  color: #AAA;
+  font-size: 40px;
 }
 
 footer {
@@ -87,5 +124,15 @@ footer {
   padding: 30px;
   font-size: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 580px) {
+  main .related .relatedPic {
+    width: 45vw;
+    max-width: 300px;
+    height: 25vh;
+    max-height: 160px;
+    margin: 10px 20px 10px 20px;
+  }
 }
 /*# sourceMappingURL=sylwia.css.map */
