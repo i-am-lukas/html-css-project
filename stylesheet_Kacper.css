@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color:rgb(217, 229, 255);
+    text-align: center;
+    font-size:40px;
+}
+
+.nav {
+    padding: 0 2em;
+    height: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    color:rgb(217, 229, 255);
+    background-image: linear-gradient(to right,#0a2b45, #042325);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav div {
+    font-size: 20px;
+    margin: 8px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.welcome, .about, .service, .contact {
+    padding: 2em 10%;
+}
+
+.start {
+    text-align: left;
+    flex:8;
+    font-size: 30px;
+}
+
+.name_link{
+    text-decoration: none;
+    color: rgb(217, 229, 255);
+}
+
+.welcome {
+    padding: 4em 10% 2em;
+    background-image: url("https://images.unsplash.com/photo-1526338613198-0e822d1c3437?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0e27cf637e8e17586cb006c2843eb94&auto=format&fit=crop&w=1050&q=80&fbclid=IwAR3_bCTinB0K0SQrqvVxFj06pA5ClXTCTZUqvLZ3oeEd-v_K2RgW9-lMF2U");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.about {
+    background-image: linear-gradient(to right,#0a2b45, #4c6477);
+}
+
+.service {
+    background-image: linear-gradient(to right,#1a6862, #0b4244);
+}
+
+.contact {
+    background-image: linear-gradient(to right,#195c65, #153c53);
+}
+
+footer {
+    font-size:20px;
+    padding:2em;
+    background-image: linear-gradient(to left,#0a2b45, #042325);
+}
