@@ -1,51 +1,28 @@
 * {
     margin: 0px;
     padding: 0px;
-    color:rgb(217, 229, 255);
+    color: rgb(217, 229, 255);
     text-align: center;
-    font-size:40px;
+    font-size: 50px;
 }
 
-.nav {
-    padding: 0 2em;
-    height: 1.5em;
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    color:rgb(217, 229, 255);
-    background-image: linear-gradient(to right,#0a2b45, #042325);
-}
 
 .container {
     display: flex;
     flex-direction: column;
 }
 
-.nav div {
+
+
+a {
+    color: rgb(217, 229, 255);
+    text-decoration: none;
     font-size: 20px;
-    margin: 8px;
 }
 
 h1 {
     font-size: 1.5em;
     font-weight: 400;
-}
-
-.welcome, .about, .service, .contact {
-    padding: 2em 10%;
-}
-
-.start {
-    text-align: left;
-    flex:8;
-    font-size: 30px;
-}
-
-.name_link{
-    text-decoration: none;
-    color: rgb(217, 229, 255);
 }
 
 .welcome {
@@ -56,20 +33,51 @@ h1 {
     background-attachment: fixed;
 }
 
-.about {
-    background-image: linear-gradient(to right,#0a2b45, #4c6477);
+div.about,
+div.services,
+div.contact {
+    padding: 2em 5%;
 }
 
-.service {
-    background-image: linear-gradient(to right,#1a6862, #0b4244);
+.about {
+    background-image: linear-gradient(to right, #0a2b45, #4c6477);
+}
+
+.services {
+    background-image: linear-gradient(to right, #1a6862, #0b4244);
 }
 
 .contact {
-    background-image: linear-gradient(to right,#195c65, #153c53);
+    background-image: linear-gradient(to right, #195c65, #153c53);
 }
 
 footer {
-    font-size:20px;
-    padding:2em;
-    background-image: linear-gradient(to left,#0a2b45, #042325);
+    font-size: 20px;
+    padding: 2em;
+    background-image: linear-gradient(to left, #0a2b45, #042325);
+}
+
+.nav {
+    padding: 0.5em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    color: rgb(217, 229, 255);
+    background-image: linear-gradient(to right, #0a2b45, #042325);
+}
+
+.start_nav {
+    flex-grow: 8;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 5%;
+}
+
+.contact_nav,
+.services_nav,
+.about_nav {
+    flex-grow: 1;
+    font-size: 0.75em;
 }
