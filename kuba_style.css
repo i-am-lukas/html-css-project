@@ -17,7 +17,6 @@ body {
 #main_photo {
     width: 100%;
     height: 100%;
-    /* background-image: url("https://source.unsplash.com/user/jackie/likes/1900x1080"); */
 }
 
 .container {
@@ -25,18 +24,15 @@ body {
     margin-right: 100px;
 }
 
-/* #welcome {
-    width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
-} */
 
 .card {
     height: 300px;
-    width: calc((100%-290px)/3);
-    margin: 15px;
+    width: 352px;
+    /* margin: 15px; */
     background-color: lightgrey;
     border: 1px solid darkgrey;
+    box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
 .card_name {
@@ -61,8 +57,11 @@ body {
     padding: 12px 20px;
 }
 
-.flexing {
+.flexing-wrapping {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 12px;
 }
 
 #button {
@@ -71,4 +70,77 @@ body {
     width: auto;
     height: 38px;
     color: white;
+}
+
+.project {
+    height: 425px;
+    width: 350px;
+    border: 1px solid darkgray;
+    /* margin: 15px; */
+    box-sizing: border-box;
+}
+
+.project_img {
+    height: 200px;
+    width: 350px;
+    border-bottom: 1px solid darkgray;
+}
+.project_text {
+    padding: 20px;
+}
+
+h3 {
+    margin-block-start: 0em;
+}
+
+.last_text{
+    border: 1px solid darkgray;
+    width: 540px;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.last_image {
+    border: 1px solid darkgray;
+    width: 540px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: mistyrose;
+    box-sizing: border-box;
+}
+
+#last_photo {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        /* margin-left: 15px;
+        margin-right: 15px; */
+        margin: 25px;
+    }
+
+    .last_text {
+        width: auto;
+    }
+
+    .last_image {
+        width: auto;
+    }
+
+    .project {
+        height: auto;
+        width: auto;
+    }
+
+    .project_img {
+        height: auto;
+        width: auto;
 }
