@@ -1,11 +1,4 @@
 /* Smietnik stylów */
-.nav {
-    text-align: center;
-    background-color: darkgray;
-    margin: 0;
-    height: 50px;
-    width: 100%;
-}
 
 /* Prawidłowe style */
 
@@ -19,10 +12,7 @@ body {
     height: 100%;
 }
 
-.container {
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
 
 
 .card {
@@ -64,6 +54,13 @@ body {
     padding-bottom: 12px;
 }
 
+.flexing-wrapping_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
 #button {
     background-color: #2a38fd;
     padding: 6px 12px;
@@ -76,7 +73,7 @@ body {
     height: 425px;
     width: 350px;
     border: 1px solid darkgray;
-    /* margin: 15px; */
+    margin: 15px;
     box-sizing: border-box;
 }
 
@@ -108,23 +105,33 @@ h3 {
     box-sizing: border-box;
 }
 
-.footer {
-    width: 100%;
-    height: 150px;
-    background-color: mistyrose;
-    box-sizing: border-box;
-}
 
-#last_photo {
+.last_photo {
     width: 100%;
     height: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1140px;
+        justify-items: center;
+}
+}
+
 @media screen and (max-width: 800px){
     .container {
-        /* margin-left: 15px;
-        margin-right: 15px; */
         margin: 25px;
+    }
+
+    .flexing-wrapping {
+        padding: 100px;
+    }
+
+    .flexing-wrapping_bottom {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .last_text {
@@ -143,4 +150,38 @@ h3 {
     .project_img {
         height: auto;
         width: auto;
+    }
 }
+
+
+
+ /* Style zaimportowane z stylesheet_Kacper.css  */
+
+ .nav {
+     padding: 0.5em 1em;
+     width: 100%;
+     box-sizing: border-box;
+     position: fixed;
+     display: flex;
+     align-items: center;
+     color: rgb(217, 229, 255);
+     background-image: linear-gradient(to right, #0a2b45, #042325);
+ }
+
+ .start_nav {
+     flex-grow: 8;
+     text-align: left;
+     font-size: 50px;
+     padding-left: 5%;
+ }
+
+ .nav :not(.start_nav) {
+     flex-grow: 1;
+ } 
+
+ a {
+     color: rgb(217, 229, 255);
+     text-decoration: none;
+     font-size: 50px;
+ }
+ /*-----------------------------------------------*/
