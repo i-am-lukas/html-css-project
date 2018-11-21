@@ -23,6 +23,7 @@ body {
     border: 1px solid darkgrey;
     box-sizing: border-box;
     margin-bottom: 15px;
+    border-radius: 1%;
 }
 
 .card_name {
@@ -75,6 +76,7 @@ body {
     border: 1px solid darkgray;
     margin: 15px;
     box-sizing: border-box;
+    border-radius: 2%;
 }
 
 .project_img {
@@ -111,50 +113,6 @@ h3 {
     height: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1140px;
-        justify-items: center;
-}
-}
-
-@media screen and (max-width: 800px){
-    .container {
-        margin: 25px;
-    }
-
-    .flexing-wrapping {
-        padding: 100px;
-    }
-
-    .flexing-wrapping_bottom {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .last_text {
-        width: auto;
-    }
-
-    .last_image {
-        width: auto;
-    }
-
-    .project {
-        height: auto;
-        width: auto;
-    }
-
-    .project_img {
-        height: auto;
-        width: auto;
-    }
-}
-
-
-
  /* Style zaimportowane z stylesheet_Kacper.css  */
 
  .nav {
@@ -166,12 +124,14 @@ h3 {
      align-items: center;
      color: rgb(217, 229, 255);
      background-image: linear-gradient(to right, #0a2b45, #042325);
+     font-family: 'Amatic SC', cursive;
+     font-weight: 500;
  }
 
  .start_nav {
      flex-grow: 8;
      text-align: left;
-     font-size: 50px;
+     font-size: 40px;
      padding-left: 5%;
  }
 
@@ -182,6 +142,57 @@ h3 {
  a {
      color: rgb(217, 229, 255);
      text-decoration: none;
-     font-size: 50px;
+     font-size: 40px;
  }
- /*-----------------------------------------------*/
+ /*--------------------MEDIA---------------------------*/
+
+ @media screen and (min-width: 1200px) {
+     .container {
+         margin-left: auto;
+         margin-right: auto;
+         width: 1140px;
+         justify-items: center;
+     }
+ }
+
+ @media screen and (max-width: 800px) {
+     .container {
+         margin: 30px;
+     }
+
+     .flexing-wrapping {
+         padding: 100px;
+     }
+
+     .flexing-wrapping_bottom {
+         padding-left: 100px;
+         padding-right: 100px;
+     }
+
+     .last_text {
+         width: auto;
+     }
+
+     .last_image {
+         width: auto;
+     }
+
+     .project {
+         height: auto;
+         width: auto;
+     }
+
+     .project_img {
+         height: auto;
+         width: auto;
+     }
+ }
+
+ @media screen and (max-width: 500px) {
+     a {
+         font-size: 25px;
+     }
+
+     .start_nav {
+         font-size: 30px;
+     }
