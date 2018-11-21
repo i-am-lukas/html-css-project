@@ -1,48 +1,67 @@
-* 
+*
     margin: 0
     padding: 0
     box-sizing: border-box
 
 html
-    font-family: 'Roboto', sans-serif
+    font-family: "Roboto", sans-serif
 
 nav
     background-color: #333
     width: 100vw
+    max-width: 100%
     color: #ddd
-    justify-content: space-between
     font-size: 24px
     position: fixed
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+
     .logo
         padding: 16px
         margin-bottom: 2px
+        letter-spacing: 1px
 
     .dropdownMenu
         width: 100vw
         display: block
+        background-color: #333
 
     .navIcon
         color: #ccc
-    
         padding: 6px 16px
         margin: 10px 10px 10px 0
         border: 1px solid #666
         border-radius: 8px
+
     .navIcon:hover
-        cursor: pointer 
+        cursor: pointer
+
     #navItems
-        padding: 10px
+        // padding: 5px
         display: none
-        transition: display .5s ease-in-out 0
+
         .navItem
-            padding: 5px
             font-size: 20px
+
+            a
+                display: block
+                padding: 5px
+                width: 100%
+                height: 100%
+                text-decoration: none
+                color: #ccc
+                letter-spacing: 1px
+                text-align: left
+
+                &:hover
+                    color: #fff
+
 main
     width: 100vw
+    max-width: 100%
     padding: 90px 20px 10px 20px
+
     header
         h1
             font-size: 40px
@@ -50,16 +69,19 @@ main
             padding-bottom: 10px
             display: inline-block
             padding-right: 10px
-        h2 
+
+        h2
             display: inline-block
+
     h2
         font-size: 34px
         font-weight: normal
         margin-top: 10px
         margin-bottom: 10px
+
     .content
         text-align: justify
-                
+
         .mainPic
             width: 100%
             height: 60vw
@@ -70,10 +92,11 @@ main
             display: flex
             justify-content: center
             align-items: center
+
     .related
         margin-top: 10px
         margin-bottom: 10px
-        
+
         .pics
             display: flex
             flex-wrap: wrap
@@ -93,17 +116,19 @@ main
 
 footer
     width: 100vw
+    max-width: 100%
     background-color: #333
     color: #ddd
     padding: 30px
     font-size: 20px
     text-align: center
 
-@media screen and (min-width: 580px) 
+@media screen and (min-width: 580px)
     main
         .related
             .pics
-                justify-content: space-around  
+                justify-content: space-around
+
             .relatedPic
                 width: 40vw
                 max-width: 300px
@@ -115,49 +140,61 @@ footer
     nav
         display: flex
         justify-content: space-between
+
         .dropdownMenu
             width: 60vw
+
         .navIcon
             display: none
+
         #navItems
             display: flex
+
             .navItem
                 display: inline-block
-                width: 10vw
-                padding: 6px
+                width: 15vw
+                padding: 3px 0
                 color: #aaa
                 margin: 16px 16px 10px 0
                 font-size: 16px
-                border: 0 solid transparent
+
+                a
+                    text-align: center
+
             .navItem:first-child
                 color: #fff
+
             .navItem:hover
                 color: #ddd
+
             .navItem:first-child:hover
                 color: #fff
-    main 
+
+    main
         .content
             display: flex
             align-items: flex-start
             width: 100%
             justify-content: space-between
+
             .mainPic
                 min-width: 360px
                 width: 50vw
-
                 min-height: 300px
                 height: 30vh
+
             .mainContent
                 margin-left: 20px
                 min-width: 300px
                 width: 45vw
+
         .related
             .pics
-                justify-content: space-between  
+                justify-content: space-between
+
             .relatedPic
                 width: 20vw
                 max-width: 300px
                 height: 14vh
                 max-height: 160px
                 margin: 5px 5px 5px 5px
-            

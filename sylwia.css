@@ -6,16 +6,14 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
   background-color: #333;
   width: 100vw;
+  max-width: 100%;
   color: #ddd;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-size: 24px;
   position: fixed;
   display: -webkit-box;
@@ -23,17 +21,21 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav .logo {
   padding: 16px;
   margin-bottom: 2px;
+  letter-spacing: 1px;
 }
 
 nav .dropdownMenu {
   width: 100vw;
   display: block;
+  background-color: #333;
 }
 
 nav .navIcon {
@@ -49,19 +51,31 @@ nav .navIcon:hover {
 }
 
 nav #navItems {
-  padding: 10px;
   display: none;
-  -webkit-transition: display .5s ease-in-out 0;
-  transition: display .5s ease-in-out 0;
 }
 
 nav #navItems .navItem {
-  padding: 5px;
   font-size: 20px;
+}
+
+nav #navItems .navItem a {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #ccc;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+nav #navItems .navItem a:hover {
+  color: #fff;
 }
 
 main {
   width: 100vw;
+  max-width: 100%;
   padding: 90px 20px 10px 20px;
 }
 
@@ -141,6 +155,7 @@ main .related .relatedPic {
 
 footer {
   width: 100vw;
+  max-width: 100%;
   background-color: #333;
   color: #ddd;
   padding: 30px;
@@ -184,12 +199,14 @@ footer {
   }
   nav #navItems .navItem {
     display: inline-block;
-    width: 10vw;
-    padding: 6px;
+    width: 15vw;
+    padding: 3px 0;
     color: #aaa;
     margin: 16px 16px 10px 0;
     font-size: 16px;
-    border: 0 solid transparent;
+  }
+  nav #navItems .navItem a {
+    text-align: center;
   }
   nav #navItems .navItem:first-child {
     color: #fff;

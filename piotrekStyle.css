@@ -71,3 +71,32 @@ body {
         width: 100%;
     }
 }
+
+/* ------------------------- */
+.nav {
+    padding: 0.5em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    /*position: fixed; */
+    display: flex;
+    align-items: center;
+    color: rgb(217, 229, 255);
+    background-image: linear-gradient(to right, #0a2b45, #042325);
+}
+
+.start_nav {
+    flex-grow: 8;
+    text-align: left;
+    font-size: 50px;
+    padding-left: 5%;
+}
+
+.nav :not(.start_nav) {
+    flex-grow: 1;
+}
+
+a {
+    color: rgb(217, 229, 255);
+    text-decoration: none;
+    font-size: 50px;
+}
