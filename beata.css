@@ -4,6 +4,9 @@ body {
     margin: 0;
 }
 
+.nav {
+    font-family: "Roboto", sans-serif;
+}
 #menu {
     background-color: black;
     color: #675cca;
